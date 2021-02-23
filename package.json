@@ -1,0 +1,33 @@
+{
+  "name": "finalproduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npm run build:dev",
+    "build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run build:dev\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "graphql-import-node": "^0.0.4",
+    "graphql-tools": "^4.0.8",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.11",
+    "@types/react-router-dom": "^5.1.7",
+    "apollo-datasource-rest": "^0.10.0",
+    "apollo-server-express": "^2.21.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "react-router-dom": "^5.2.0"
+  }
+}
