@@ -17,7 +17,7 @@ import {
 
 const useStyles = makeStyles({
   jokes: {
-    fontSize: 50,
+    fontSize: 25,
     textAlign: "center",
     margin: 50,
   },
@@ -43,8 +43,6 @@ const Home: React.FC = () => {
     fetchPolicy: "no-cache",
   });
   const classes = useStyles();
-
-  if (data) console.log(data);
   return (
     <div>
       <CssBaseline />
