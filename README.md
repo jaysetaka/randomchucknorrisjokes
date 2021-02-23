@@ -1,9 +1,8 @@
 # randomchucknorrisjokes
 A random joke generator 
-#root folder
+# randomchucknorrisjokes
 npm i / yarn
-#cd client
+# cd client
 npm i / yarn
 # cd back to root
 npm run dev
-
